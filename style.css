@@ -1,0 +1,98 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0 10px;
+}
+
+h1 {
+  margin: 20px 0;
+  color: #222;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.frame-block {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  max-width: 420px;
+}
+
+.frame-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.frame-canvas {
+  position: relative;
+}
+
+canvas {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  border: none;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background: #eaeaea;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.logo {
+  max-width: 100px;
+  margin: 10px 0;
+}
+
+.desktop-instruction {
+  display: none;
+  font-style: italic;
+  margin: 20px 0;
+  color: #555;
+}
+
+.mobile-instruction {
+  display: block;
+  font-style: italic;
+  font-size: 13px;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .mobile-instruction {
+    display: none;
+  }
+  .desktop-instruction {
+    display: block;
+  }
+}

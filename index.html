@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>ফ্রেম ফটো তৈরি করুন</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📸 আপনার ফ্রেম ফটো তৈরি করুন</h1>
+
+  <div class="container">
+    <!-- Frame 1: Profile -->
+    <div class="frame-block">
+      <div class="frame-title">প্রোফাইল ফটো</div>
+      <div class="frame-canvas">
+        <canvas id="canvas1" width="400" height="400"></canvas>
+        <input type="file" accept="image/*" onchange="loadImage(event, 1)">
+        <button onclick="downloadImage(1)">ডাউনলোড করুন</button>
+      </div>
+      <p class="mobile-instruction">ছবিটি সঠিকভাবে বসানোর জন্য ড্রাগ ও জুম ব্যবহার করুন।</p>
+    </div>
+
+    <!-- Frame 2: Post -->
+    <div class="frame-block">
+      <div class="frame-title">পোস্ট ফটো</div>
+      <div class="frame-canvas">
+        <canvas id="canvas2" width="400" height="400"></canvas>
+        <input type="file" accept="image/*" onchange="loadImage(event, 2)">
+        <button onclick="downloadImage(2)">ডাউনলোড করুন</button>
+      </div>
+      <p class="mobile-instruction">ছবিটি সঠিকভাবে বসানোর জন্য ড্রাগ ও জুম ব্যবহার করুন।</p>
+    </div>
+  </div>
+
+  <!-- Desktop instruction -->
+  <p class="desktop-instruction">ছবিটি সঠিকভাবে বসানোর জন্য ড্রাগ ও জুম ব্যবহার করুন।</p>
+
+  <footer>
+    <p>প্রযোজনায়:</p>
+    <img src="logo.png" alt="লোগো" class="logo">
+    <p>সার্বিক সহযোগিতায়: এডমিন</p>
+    <p><a href="https://wa.me/8801706678706" target="_blank">📞 +8801706678706</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
